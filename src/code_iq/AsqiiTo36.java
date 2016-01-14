@@ -10,6 +10,7 @@ import java.util.Scanner;
  * https://codeiq.jp/q/2537
  * ScannerでEOFがはいるまで複数行の入力が取得できる
  * BigIntegerで36進数までは変換できる
+ * リリース
  * @author imamura
  *
  */
