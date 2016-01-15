@@ -22,17 +22,7 @@ public class EnglishSentenceSplit {
 			List<String> sentenceList = Arrays.asList(sentences);
 			for (String sentence : sentenceList) {
 				sentence = sentence.trim();
-				if (sentence.length() == 0) {
-					builder.append(" ");
-					continue;
-				}
-				if (prevSentence == null) {
-					if (isEnd(sentence)) {
-						System.out.print(sentence);
-						System.out.println(" ");
-						continue;
-					}
-				} else if (isEnd(prevSentence)) {
+				if (prevSentence != null && isEnd(prevSentence)) {
 					System.out.println(builder.toString());
 					builder.setLength(0);
 					prevSentence = null;
